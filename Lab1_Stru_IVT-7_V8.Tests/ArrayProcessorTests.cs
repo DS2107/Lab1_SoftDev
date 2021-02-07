@@ -15,7 +15,7 @@ namespace Lab_1_Test
             ArrayProcessor arrayProcessor = new ArrayProcessor();
             CollectionAssert.AreEqual(expectedResult, arrayProcessor.SortAndFilter(obtainedResult));
         }
-
+            
 
         [Test]
         [TestCase(new int[] { 1001, 5000 }, new int[] { 1001, 5000, -5000, 23, 32 })]
