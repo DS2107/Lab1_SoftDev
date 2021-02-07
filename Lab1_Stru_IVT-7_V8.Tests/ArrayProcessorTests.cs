@@ -16,6 +16,7 @@ namespace Lab_1_Test
             CollectionAssert.AreEqual(expectedResult, arrayProcessor.SortAndFilter(obtainedResult));
         }
 
+
         [Test]
         [TestCase(new int[] { 1001, 5000 }, new int[] { 1001, 5000, -5000, 23, 32 })]
         public void Removing_excess(int[] expectedResult, int[] obtainedResult)
