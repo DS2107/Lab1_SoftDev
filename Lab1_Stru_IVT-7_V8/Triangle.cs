@@ -29,13 +29,16 @@ namespace Lab1_Stru_IVT_7
         /// <param name="c">Сторона с</param>
         public Triangle(double a, double b , double c)
         {
-            if (Revise(a, b, c))
-            {
-                this.a = a;
-                this.b = b;
-                this.c = c;
-            } //if
+            SetSides(a, b, c);
         } 
+
+        /// <summary>
+        /// Пустой конструктор
+        /// </summary>
+        public Triangle()
+        {
+
+        } // Triangle
 
 
         /// <summary>
@@ -46,9 +49,12 @@ namespace Lab1_Stru_IVT_7
         /// <param name="c"> Сторона с</param>
         public void SetSides (double a, double b, double c)
         {
-            this.a = a;
-            this.b = b;
-            this.c = c;
+            if (Revise(a, b, c))
+            {
+                this.a = a;
+                this.b = b;
+                this.c = c;
+            } //if
         } // SetSides
 
         /// <summary>

@@ -69,7 +69,6 @@ namespace Lab1_Stru_IVT_7
         /// <returns></returns>
         public string UpperString(string file)
         {
-
             return file.ToUpper();
         } // UpperString
     }

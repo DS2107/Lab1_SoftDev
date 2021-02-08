@@ -45,11 +45,9 @@ namespace Lab1_Stru_IVT_7_V8.Tests
             public void ChangeExtensionTMP()
             {
                 StringFormatter stringFormatter = new StringFormatter();
-                Assert.AreEqual(@"Hello.tmp", stringFormatter.SelectExpansion(@"Hello.tmp"));
+                Assert.AreEqual(@"Hello.tmp", stringFormatter.SelectExpansion(@"Hello"));
             }
 
-
-            
             [TestMethod]
             public void Change()
             {
